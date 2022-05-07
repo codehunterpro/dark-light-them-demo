@@ -17,7 +17,7 @@ function darkTheme(event) {
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
-    DarkLightMode("Light");
+    DarkLightMode("light");
   }
 }
 
