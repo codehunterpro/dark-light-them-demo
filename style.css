@@ -215,9 +215,9 @@ p {
 
 .theme-switch {
   display: inline-block;
-  height: 34px;
+  height: 24px;
   position: relative;
-  width: 60px;
+  width: 40px;
 }
 
 .theme-switch input {
@@ -239,11 +239,11 @@ p {
   background: #fff;
   bottom: 4px;
   content: "";
-  height: 26px;
+  height: 16px;
   left: 4px;
   position: absolute;
   /* transition: 0.4s; */
-  width: 26px;
+  width: 16px;
 }
 
 input:checked + .slider {
@@ -251,7 +251,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-  transform: translateX(26px);
+  transform: translateX(18px);
 }
 
 .slider.round {
@@ -289,6 +289,10 @@ input:checked + .slider::before {
     background: rgb(255 255 255 / 50%);
     font-family: var(--oswald);
     transition: 0.5s;
+  }
+  .theme-switch-wrapper span {
+    margin-right: 5px;
+    font-size: 0.6rem;
   }
 
   .about-container {

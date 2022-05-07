@@ -7,7 +7,8 @@ const image3 = document.getElementById("image-3");
 const textBox = document.getElementById("text-box");
 const slide = document.querySelector(".slider");
 const hubButton = document.querySelector(".humburger-button");
-
+const overlay = document.querySelector(".overlay");
+const toggle_text = document.querySelector(".toggle-text");
 // listen for Dark and Light Mode;
 function darkTheme(event) {
   if (event.target.checked) {
@@ -28,7 +29,6 @@ function DarkLightMode(mood) {
   toggleIcon.children[0].innerHTML = `${mood} Mode`.toUpperCase();
   toggleIcon.children[1].classList.toggle("fa-moon");
   toggleIcon.children[1].classList.toggle("fa-sun");
-
   image1.src = `img/${mood}-apps-on-mobile.png`;
   image2.src = `img/${mood}-on-chair.png`;
   image3.src = `img/${mood}-presentation.png`;
@@ -49,4 +49,8 @@ if (currentTheme) {
 
 hubButton.addEventListener("click", function () {
   nav.classList.toggle("hidden");
+});
+
+window.addEventListener("scroll", function () {
+  nav.classList.add("hidden");
 });
