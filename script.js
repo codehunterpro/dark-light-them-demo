@@ -6,6 +6,7 @@ const image2 = document.getElementById("image-2");
 const image3 = document.getElementById("image-3");
 const textBox = document.getElementById("text-box");
 const slide = document.querySelector(".slider");
+const hubButton = document.querySelector(".humburger-button");
 
 // listen for Dark and Light Mode;
 function darkTheme(event) {
@@ -45,3 +46,7 @@ if (currentTheme) {
     DarkLightMode("dark");
   }
 }
+
+hubButton.addEventListener("click", function () {
+  nav.classList.toggle("hidden");
+});
