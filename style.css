@@ -182,7 +182,7 @@ p {
 /* Contact Section */
 .fa-brands {
   font-size: 100px;
-  margin-left: 50px;
+  margin: 0px 10px;
   cursor: pointer;
   color: var(--primary-color);
 }
